@@ -62,7 +62,7 @@
 	
 	int keep_dims[1];
 	keep_dims[0] = 1;
-	MPI_Cart_sub(cartcomm, keep_dims, y_comm);
+	MPI_Cart_sub(cartcomm, keep_dims, &y_comm);
 	printf("%d: my y rank is %d", my_rank, coords[1]);
 
     MPI_Finalize();
